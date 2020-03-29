@@ -99,7 +99,7 @@
           "Microsoft.EntityFrameworkCore.Relational": "3.0.0"
         },
         "compile": {
-          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Design.dll": {}
+          "lib/netstandard2.1/_._": {}
         },
         "runtime": {
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Design.dll": {}
@@ -5206,11 +5206,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\dev\\DatingApp\\Dating.API\\Dating.API.csproj",
+      "projectUniqueName": "C:\\dev\\DatingApp\\Dating.API\\Dating.API.csproj",
       "projectName": "Dating.API",
-      "projectPath": "c:\\dev\\DatingApp\\Dating.API\\Dating.API.csproj",
+      "projectPath": "C:\\dev\\DatingApp\\Dating.API\\Dating.API.csproj",
       "packagesPath": "C:\\Users\\Curso\\.nuget\\packages\\",
-      "outputPath": "c:\\dev\\DatingApp\\Dating.API\\obj\\",
+      "outputPath": "C:\\dev\\DatingApp\\Dating.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5245,6 +5245,8 @@
             "version": "[3.0.0, )"
           },
           "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
             "target": "Package",
             "version": "[3.0.0, )"
           },

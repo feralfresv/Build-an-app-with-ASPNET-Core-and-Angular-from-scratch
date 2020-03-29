@@ -8,6 +8,7 @@ namespace Dating.API.Data
         //new Folder Data Create de funcion to connect db
         public DataContext(DbContextOptions<DataContext> options) : base(options){}
         public DbSet<Value> Values { get; set;}
+        public DbSet<User> Users { get; set; }
         
     }
 }

@@ -30,7 +30,7 @@ namespace Dating.API
             //Create my Connection to Sqlite_DB v3.0
             services.AddDbContext<DataContext>(x => x.UseSqlServer
             (Configuration.GetConnectionString("DefaultConnection")));
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
              services.AddCors();
         }
 
