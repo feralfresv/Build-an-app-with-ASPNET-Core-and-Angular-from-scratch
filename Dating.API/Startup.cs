@@ -28,7 +28,8 @@ namespace Dating.API
         public void ConfigureServices(IServiceCollection services)
         {   
             //Create my Connection to Sqlite_DB v3.0
-            services.AddDbContext<DataContext>(x => x.UseSqlite("ConnectionString"));
+            services.AddDbContext<DataContext>(x => x.UseSqlServer
+            (Configuration.GetConnectionString("DefaultConnection")));
             services.AddControllers();
         }
 
