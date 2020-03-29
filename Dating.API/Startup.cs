@@ -1,17 +1,13 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
+
 using Dating.API.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 
 namespace Dating.API
 {
@@ -31,7 +27,8 @@ namespace Dating.API
             services.AddDbContext<DataContext>(x => x.UseSqlServer
             (Configuration.GetConnectionString("DefaultConnection")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
-             services.AddCors();
+            services.AddCors();
+            services.AddScoped<IAuthRepository, AuthRepository>();    
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

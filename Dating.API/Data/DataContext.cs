@@ -11,4 +11,4 @@ namespace Dating.API.Data
         public DbSet<User> Users { get; set; }
         
     }
-}
+}   
