@@ -7,7 +7,7 @@ namespace Dating.API.Dtos
         [Required]
         public string Username { get; set; }
         [Required]
-        [StringLength(8, MinimumLength = 4, ErrorMessage ="Error stringlenght")]
+        [StringLength(8, MinimumLength = 4, ErrorMessage ="Error stringlenght_")]
         public string Password { get; set; }
     }
 }
