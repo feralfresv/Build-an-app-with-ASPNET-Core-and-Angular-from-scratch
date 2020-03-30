@@ -18,8 +18,8 @@ namespace Dating.API.Controllers
 
         [HttpPost("register")]
         public async Task<IActionResult> Register(UserForRegisterDto  userForRegisterDto)
-        {
-            //validate the request
+        {        
+            //Validate Request
             userForRegisterDto.Username = userForRegisterDto.Username.ToLower();
 
             if (await _repo.UserExists(userForRegisterDto.Username))
