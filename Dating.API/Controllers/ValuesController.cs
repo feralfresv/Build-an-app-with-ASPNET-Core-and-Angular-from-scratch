@@ -17,6 +17,7 @@ namespace Dating.API.Controllers
             _context = context;
         }
 
+        [AllowAnonymous]
         // GET: api/Value
         [HttpGet]
         public async Task<IActionResult> GetValues()
